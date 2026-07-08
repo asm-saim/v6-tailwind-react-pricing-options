@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Links from './Links';
+import { Menu, X } from 'lucide-react';
+
 const navData = [
     {
         id: 1,
@@ -29,15 +31,34 @@ const navData = [
 ];
 
 const Navbar = () => {
-    return (
-        <nav>
 
-            {/* method: 3 sending data as props */}
-            <ul className='flex justify-center gap-5'>
+    const links = navData.map(route => <Links key={route.id} route={route}></Links>)
+
+
+    //set state for toggling:
+    const [open, setOpen] = useState(true)
+
+    return (
+        <nav className='flex justify-between mx-10'>
+
+            <span onClick={() => setOpen(!open)} className='flex  mx-3 md:mx-10'>
+                {open ?
+                    <Menu className='md:hidden'></Menu> :
+                    <X className='md:hidden'></X>}
+
+                <ul className='md:hidden'>
+                    {links}
+                </ul>
+                <h3>My Name</h3>
+            </span>
+
+            <ul className='hidden md:flex justify-center gap-5'>
                 {
-                    navData.map(route => <Links key={route.id} route={route}></Links>)
+                    links
                 }
             </ul>
+
+            <button className='btn'>Sign In</button>
 
             {/* method:2 using array of object  */}
             {/* <ul className='flex justify-center gap-10 '>
