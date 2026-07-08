@@ -36,20 +36,20 @@ const Navbar = () => {
 
 
     //set state for toggling:
-    const [open, setOpen] = useState(true)
+    const [open, setOpen] = useState(false)
 
     return (
         <nav className='flex justify-between mx-10'>
 
             <span onClick={() => setOpen(!open)} className='flex  mx-3 md:mx-10'>
                 {open ?
-                    <Menu className='md:hidden'></Menu> :
-                    <X className='md:hidden'></X>}
+                    <X className='md:hidden'></X> : <Menu className='md:hidden'></Menu>}
 
-                <ul className='md:hidden'>
+                <ul className={`absolute z-30 bg-amber-200 text-black md:hidden duration-1000
+                    ${open ? 'top-8' : '-top-40'}`}>
                     {links}
                 </ul>
-                <h3>My Name</h3>
+                <h3 className='ml-5 md:ml-0'>My Name</h3>
             </span>
 
             <ul className='hidden md:flex justify-center gap-5'>

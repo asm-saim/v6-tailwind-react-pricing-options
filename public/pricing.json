@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "plan": "Basic",
+        "price": 19.99,
+        "duration": "Monthly",
+        "description": "Perfect for beginners starting their fitness journey.",
+        "features": [
+            "Gym Access",
+            "Locker Facility",
+            "Free Wi-Fi",
+            "1 Fitness Assessment"
+        ]
+    },
+    {
+        "id": 2,
+        "plan": "Standard",
+        "price": 39.99,
+        "duration": "Monthly",
+        "description": "Ideal for regular gym members looking for more benefits.",
+        "features": [
+            "24/7 Gym Access",
+            "Locker Facility",
+            "Group Fitness Classes",
+            "2 Personal Training Sessions",
+            "Nutrition Guide"
+        ]
+    },
+    {
+        "id": 3,
+        "plan": "Premium",
+        "price": 69.99,
+        "duration": "Monthly",
+        "description": "Complete fitness package with premium benefits.",
+        "features": [
+            "24/7 Gym Access",
+            "Unlimited Group Classes",
+            "Weekly Personal Training",
+            "Customized Diet Plan",
+            "Sauna & Steam Room",
+            "Priority Support"
+        ]
+    }
+]
