@@ -16,6 +16,7 @@
         "id": 2,
         "plan": "Standard",
         "price": 39.99,
+        "popular": true,
         "duration": "Monthly",
         "description": "Ideal for regular gym members looking for more benefits.",
         "features": [
