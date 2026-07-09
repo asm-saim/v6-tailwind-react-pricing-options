@@ -3,8 +3,8 @@ import React from 'react';
 
 const Features = ({ feature }) => {
     return (
-        <div >            
-            <div className='flex gap-2 '>
+        <div>            
+            <div className='flex '>
                 <CircleCheckBig></CircleCheckBig><p>{feature}</p>
             </div>
         </div>
